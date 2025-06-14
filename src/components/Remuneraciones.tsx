@@ -20,18 +20,10 @@ const Remuneraciones = () => {
 
 		const nuevosValores = valoresRemuneraciones.filter((v) => variablesIds.includes(v.id));
 
-		const total = sum(nuevosValores.map((v) => v.valor));
-		setTotal(total);
-
-		setTotalRemuneraciones(total);
-
-		setValoresRemuneraciones((prev) => {
-			const esIgual =
-				prev.length === nuevosValores.length &&
-				prev.every((v, i) => v.id === nuevosValores[i].id && v.valor === nuevosValores[i].valor);
-
-			return esIgual ? prev : nuevosValores;
-		});
+		// Este cálculo ahora es independiente del setValoresRemuneraciones
+		const totalCalculado = sum(nuevosValores.map((v) => v.valor));
+		setTotal(totalCalculado);
+		setTotalRemuneraciones(totalCalculado);
 	}, [variables, valoresRemuneraciones]);
 
 	useEffect(() => {

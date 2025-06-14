@@ -17,21 +17,11 @@ const Descuentos = () => {
 
 	useEffect(() => {
 		const variablesIds = variables.map((v) => v.id);
-
 		const nuevosValores = valoresDescuentos.filter((v) => variablesIds.includes(v.id));
 
-		const total = sum(nuevosValores.map((v) => v.valor));
-		setTotal(total);
-
-		setTotalDescuentos(total);
-
-		setValoresDescuentos((prev) => {
-			const esIgual =
-				prev.length === nuevosValores.length &&
-				prev.every((v, i) => v.id === nuevosValores[i].id && v.valor === nuevosValores[i].valor);
-
-			return esIgual ? prev : nuevosValores;
-		});
+		const totalCalculado = sum(nuevosValores.map((v) => v.valor));
+		setTotal(totalCalculado);
+		setTotalDescuentos(totalCalculado);
 	}, [variables, valoresDescuentos]);
 
 	useEffect(() => {
