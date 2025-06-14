@@ -9,7 +9,7 @@ type AlertasProps = {
 };
 
 const Alertas = ({ openAlert, setOpenAlert, messageAlert, alertType }: AlertasProps) => {
-	const handleClose = (event?: React.SyntheticEvent | Event, reason?: SnackbarCloseReason) => {
+	const handleClose = (_event?: React.SyntheticEvent | Event, reason?: SnackbarCloseReason) => {
 		if (reason === "clickaway") return;
 		setOpenAlert(false);
 	};

@@ -1,4 +1,4 @@
-import { AppBar, Box, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const FooterLayout = () => {
 	return (
