@@ -1,0 +1,120 @@
+[
+	{
+		"id": 1,
+		"nombre": "aporteObligatorioAfp",
+		"descripcion": "Aporte Obligatorio AFP",
+		"obligatoria": false,
+		"formula": "totalRemuneraciones * 0.10",
+		"diasTrabajados": false,
+		"cantidad": false
+	},
+	{
+		"id": 2,
+		"nombre": "primaSegurosAfp",
+		"descripcion": "Prima de Seguros AFP",
+		"obligatoria": false,
+		"formula": "totalRemuneraciones * 0.0137",
+		"diasTrabajados": false,
+		"cantidad": false
+	},
+	{
+		"id": 3,
+		"nombre": "comisionAfp",
+		"descripcion": "Comisión AFP",
+		"obligatoria": false,
+		"formula": "totalRemuneraciones * 0.0125",
+		"diasTrabajados": false,
+		"cantidad": false
+	},
+	{
+		"id": 4,
+		"nombre": "onp",
+		"descripcion": "Descuento ONP",
+		"obligatoria": false,
+		"formula": "totalRemuneraciones * 0.13",
+		"diasTrabajados": false,
+		"cantidad": false
+	},
+	{
+		"id": 5,
+		"nombre": "quintaCategoria",
+		"descripcion": "Impuesto a la Renta (5ta categoría)",
+		"obligatoria": false,
+		"formula": "totalRemuneraciones * 0.08",
+		"diasTrabajados": false,
+		"cantidad": false
+	},
+
+	{
+		"id": 6,
+		"nombre": "essalud",
+		"descripcion": "Aporte ESSALUD (a cargo del empleador)",
+		"obligatoria": true,
+		"formula": "totalRemuneraciones * 0.09",
+		"diasTrabajados": false,
+		"cantidad": false
+	},
+	{
+		"id": 7,
+		"nombre": "asignacionFamiliar",
+		"descripcion": "Asignación Familiar",
+		"obligatoria": false,
+		"formula": "totalRemuneraciones * 0.10",
+		"diasTrabajados": false,
+		"cantidad": false
+	},
+	{
+		"id": 8,
+		"nombre": "remuneracionVacacional",
+		"descripcion": "Remuneración Vacacional",
+		"obligatoria": false,
+		"formula": "totalRemuneraciones * 0.0833",
+		"diasTrabajados": false,
+		"cantidad": false
+	},
+	{
+		"id": 9,
+		"nombre": "gratificacionJulio",
+		"descripcion": "Gratificación de Julio",
+		"obligatoria": false,
+		"formula": "totalRemuneraciones",
+		"diasTrabajados": false,
+		"cantidad": false
+	},
+	{
+		"id": 10,
+		"nombre": "gratificacionDiciembre",
+		"descripcion": "Gratificación de Diciembre",
+		"obligatoria": false,
+		"formula": "totalRemuneraciones",
+		"diasTrabajados": false,
+		"cantidad": false
+	},
+	{
+		"id": 11,
+		"nombre": "bonoExtraordinario",
+		"descripcion": "Bono Extraordinario",
+		"obligatoria": false,
+		"formula": "totalRemuneraciones * 0.10",
+		"diasTrabajados": false,
+		"cantidad": false
+	},
+	{
+		"id": 12,
+		"nombre": "horasExtras",
+		"descripcion": "Pago por Horas Extras",
+		"obligatoria": false,
+		"formula": "totalRemuneraciones * 0.05",
+		"diasTrabajados": false,
+		"cantidad": false
+	},
+	{
+		"id": 13,
+		"nombre": "movilidad",
+		"descripcion": "Movilidad",
+		"obligatoria": false,
+		"formula": "totalRemuneraciones * 0.03",
+		"diasTrabajados": false,
+		"cantidad": false
+	}
+]

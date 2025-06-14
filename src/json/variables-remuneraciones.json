@@ -1,0 +1,92 @@
+[
+	{
+		"id": 1,
+		"nombre": "remuneracionBasica",
+		"descripcion": "Remuneración Básica",
+		"obligatoria": true,
+		"formula": "sueldoDiario * diasTrabajados",
+		"diasTrabajados": true,
+		"cantidad": true
+	},
+	{
+		"id": 2,
+		"nombre": "bonificacionTiempoServicio",
+		"descripcion": "Bono Turno Noche",
+		"obligatoria": false,
+		"formula": "sueldoDiario * diasTrabajados / 100",
+		"diasTrabajados": true,
+		"cantidad": true
+	},
+	{
+		"id": 3,
+		"nombre": "asignacionFamiliar",
+		"descripcion": "Asignación Familiar",
+		"obligatoria": false,
+		"formula": "sueldoDiario * 0.1 * diasTrabajados",
+		"diasTrabajados": true,
+		"cantidad": true
+	},
+	{
+		"id": 4,
+		"nombre": "bonoPeligrosidad",
+		"descripcion": "Bono por Peligrosidad",
+		"obligatoria": false,
+		"formula": "sueldoDiario * 0.3 * diasTrabajados",
+		"diasTrabajados": true,
+		"cantidad": true
+	},
+	{
+		"id": 5,
+		"nombre": "bonoProduccion",
+		"descripcion": "Bono de Producción",
+		"obligatoria": false,
+		"formula": "sueldoDiario * 0.25 * diasTrabajados",
+		"diasTrabajados": true,
+		"cantidad": true
+	},
+	{
+		"id": 6,
+		"nombre": "bonoAlimentacion",
+		"descripcion": "Bono de Alimentación",
+		"obligatoria": false,
+		"formula": "sueldoDiario * 0.15 * diasTrabajados",
+		"diasTrabajados": true,
+		"cantidad": true
+	},
+	{
+		"id": 7,
+		"nombre": "bonoAsistenciaPerfecta",
+		"descripcion": "Bono por Asistencia Perfecta",
+		"obligatoria": false,
+		"formula": "sueldoDiario * 0.2 * diasTrabajados",
+		"diasTrabajados": true,
+		"cantidad": true
+	},
+	{
+		"id": 8,
+		"nombre": "bonoPuntualidad",
+		"descripcion": "Bono por Puntualidad",
+		"obligatoria": false,
+		"formula": "sueldoDiario * 0.1 * diasTrabajados",
+		"diasTrabajados": true,
+		"cantidad": true
+	},
+	{
+		"id": 9,
+		"nombre": "bonoResponsabilidad",
+		"descripcion": "Bono por Responsabilidad",
+		"obligatoria": false,
+		"formula": "sueldoDiario * 0.18 * diasTrabajados",
+		"diasTrabajados": true,
+		"cantidad": true
+	},
+	{
+		"id": 10,
+		"nombre": "movilidadDiaria",
+		"descripcion": "Movilidad Diaria",
+		"obligatoria": false,
+		"formula": "sueldoDiario * 0.12 * diasTrabajados",
+		"diasTrabajados": true,
+		"cantidad": true
+	}
+]
